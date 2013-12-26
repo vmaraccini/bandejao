@@ -54,3 +54,5 @@ http://api-bitcluster.rhcloud.com/bandejao/balance?nusp=123456789&pass=senha
 [date]: http://php.net/manual/en/function.date.php
 [rucard]: https://uspdigital.usp.br/rucard
 [api]: http://api-bitcluster.rhcloud.com
+
+Créditos a Denis Isidoro pelo projeto inicial.
