@@ -1,5 +1,7 @@
 <?php
 
+require_once("Encoding.php");
+
 class Bandex {
 
 	var $days = array(
@@ -293,7 +295,9 @@ class Bandex {
 
 	    if (!mb_check_encoding($content, 'UTF-8') || !($content === mb_convert_encoding(mb_convert_encoding($content, 'UTF-32', 'UTF-8' ), 'UTF-8', 'UTF-32'))) { 
 	        $content = mb_convert_encoding($content, 'UTF-8'); 
-	    } 
+	    }
+	    
+	    $content = Encoding::toUTF8($content);
 
 	    return $content; 
 
